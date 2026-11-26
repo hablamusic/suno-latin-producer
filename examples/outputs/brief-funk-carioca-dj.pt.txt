@@ -1,0 +1,22 @@
+suno-latin-producer brief  funk carioca  (DJ edit)
+tempo 130 BPM (range 125-135) · key A minor · mood euphoric · vocal male · lang pt · seed 2
+
+Style prompt (paste into the Style field)
+  A  [base] funk carioca, 130 BPM, A minor, euphoric, anthemic, tamborzão drums, synth stabs, loud punchy mix, warm male vocal, Brazilian Portuguese vocals, clear diction, extended instrumental intro, extended instrumental outro, DJ-friendly arrangement
+  B  [vocal] funk carioca, 130 BPM, A minor, euphoric, anthemic, tamborzão drums, synth stabs, loud punchy mix, gritty male vocal, Brazilian Portuguese vocals, clear diction, extended instrumental intro, extended instrumental outro, DJ-friendly arrangement
+  C  [production] funk carioca, 130 BPM, A minor, euphoric, anthemic, tamborzão drums, synth stabs, raw baile funk production, warm male vocal, Brazilian Portuguese vocals, clear diction, extended instrumental intro, extended instrumental outro, DJ-friendly arrangement
+
+Structure (perreo)
+  [Intro] [Hook] [Verse 1] [Hook] [Verse 2] [Hook] [Breakdown] [Hook] [Outro]
+
+Lyric brief
+  [Intro] Versão DJ: deixe instrumental (bateria + baixo, sem voz) para dar para mixar na entrada e na saída; 16 compassos é o padrão de pista.
+  [Hook] 2-4 linhas de 5-8 sílabas, repetidas igual toda vez; uma ideia só.
+  [Verse 1] 4 linhas de 7-10 sílabas, esquema ABAB ou AABB; uma cena, substantivos concretos.
+  [Breakdown] 2 linhas, metade da densidade de um verso; voz e um instrumento.
+  [Outro] Versão DJ: deixe instrumental (bateria + baixo, sem voz) para dar para mixar na entrada e na saída; 16 compassos é o padrão de pista.
+
+Next
+  write the lyrics with these tags, then:
+  python3 scripts/lyric_meter.py lyrics.txt
+  python3 scripts/suno_lint.py lyrics.txt --dj --style-text "funk carioca, 130 BPM, A minor, euphoric, anthemic, tamborzão drums, synth stabs, loud punchy mix, warm male vocal, Brazilian Portuguese vocals, clear diction, extended instrumental intro, extended instrumental outro, DJ-friendly arrangement"

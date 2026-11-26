@@ -1,0 +1,29 @@
+{
+  "name": "suno-latin-producer",
+  "version": "0.2.0",
+  "description": "Suno-ready song briefs for Latin, Brazilian and club genres: style prompt, section tags, even-length lyrics, one-axis A/B variants and DJ edits, checked by a Spanish/Portuguese/English syllable and rhyme meter and a tag lint.",
+  "author": {
+    "name": "HablaMusic",
+    "email": "support@hablamusic.com",
+    "url": "https://hablamusic.com/?utm_source=github&utm_medium=plugin&utm_campaign=suno-latin-producer"
+  },
+  "homepage": "https://hablamusic.github.io/suno-latin-producer/",
+  "repository": "https://github.com/hablamusic/suno-latin-producer",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "skill",
+    "suno",
+    "ai-music",
+    "reggaeton",
+    "latin",
+    "dj",
+    "songwriting",
+    "lyrics",
+    "spanish",
+    "portuguese"
+  ],
+  "skills": [
+    "./"
+  ]
+}

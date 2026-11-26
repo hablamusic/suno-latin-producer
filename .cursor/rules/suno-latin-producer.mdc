@@ -1,0 +1,7 @@
+---
+description: Writes Suno-ready song briefs (style prompt, section tags, even-length lyrics, one-axis A/B variants) for Latin, Brazilian and club genres, checks them with a Spanish/Portuguese/English syllable and rhyme meter and a tag lint, and makes DJ edits with instrumental intros and outros. Use for any Suno prompt, Suno tags, song structure or lyrics-for-Suno request.
+globs:
+alwaysApply: false
+---
+
+@SKILL.md

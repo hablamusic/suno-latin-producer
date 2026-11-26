@@ -1,0 +1,16 @@
+[
+  {"args": ["scripts/lyric_meter.py", "examples/lyrics/luna-de-neon.es.txt"], "output": "examples/outputs/luna-de-neon.meter.txt"},
+  {"args": ["scripts/lyric_meter.py", "examples/lyrics/baile-na-laje.pt.txt"], "output": "examples/outputs/baile-na-laje.meter.txt"},
+  {"args": ["scripts/lyric_meter.py", "examples/lyrics/midnight-bus.txt"], "output": "examples/outputs/midnight-bus.meter.txt"},
+  {"args": ["scripts/lyric_meter.py", "--json", "examples/lyrics/midnight-bus.txt"], "output": "examples/outputs/midnight-bus.meter.json"},
+  {"args": ["scripts/suno_lint.py", "examples/lyrics/luna-de-neon.es.txt", "--dj", "--style", "examples/style/luna-de-neon.es.txt"], "output": "examples/outputs/luna-de-neon.lint.txt"},
+  {"args": ["scripts/suno_lint.py", "examples/lyrics/baile-na-laje.pt.txt", "--dj", "--style", "examples/style/baile-na-laje.pt.txt"], "output": "examples/outputs/baile-na-laje.lint.txt"},
+  {"args": ["scripts/suno_lint.py", "examples/lyrics/midnight-bus.txt", "--dj", "--style", "examples/style/midnight-bus.txt"], "output": "examples/outputs/midnight-bus.dj-lint.txt", "exit": 0},
+  {"args": ["scripts/suno_lint.py", "examples/lyrics/midnight-bus.txt", "--style", "examples/style/midnight-bus.txt"], "output": "examples/outputs/midnight-bus.lint.txt"},
+  {"args": ["scripts/suno_lint.py", "examples/lyrics/bad-tags.txt", "--style", "examples/style/bad-style.txt"], "output": "examples/outputs/bad-tags.lint.txt", "exit": 1},
+  {"args": ["scripts/brief.py", "--genre", "reggaeton", "--mood", "playful", "--lang", "es", "--dj", "--seed", "4"], "output": "examples/outputs/brief-reggaeton-dj.es.txt"},
+  {"args": ["scripts/brief.py", "--genre", "funk carioca", "--mood", "euphoric", "--lang", "pt", "--dj", "--seed", "2"], "output": "examples/outputs/brief-funk-carioca-dj.pt.txt"},
+  {"args": ["scripts/brief.py", "--genre", "cumbia", "--fuse", "latin house", "--mood", "warm", "--lang", "es", "--seed", "7"], "output": "examples/outputs/brief-cumbia-latin-house.es.txt"},
+  {"args": ["scripts/brief.py", "--genre", "house", "--mood", "euphoric", "--variants", "4", "--seed", "11", "--json"], "output": "examples/outputs/brief-house.json"},
+  {"args": ["scripts/brief.py", "--list"], "output": "examples/outputs/brief-list.txt"}
+]

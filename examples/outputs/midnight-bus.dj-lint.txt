@@ -1,0 +1,3 @@
+suno_lint  examples/lyrics/midnight-bus.txt
+! L017  line 45: --dj: [Outro] has sung lines; keep it instrumental so it can be beatmatched
+= 0 error(s), 1 warning(s), 0 info

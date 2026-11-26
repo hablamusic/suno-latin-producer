@@ -1,0 +1,22 @@
+suno-latin-producer brief  reggaeton  (DJ edit)
+tempo 94 BPM (range 88-100) · key F minor · mood playful · vocal male · lang es · seed 4
+
+Style prompt (paste into the Style field)
+  A  [base] reggaeton, 94 BPM, F minor, playful, bouncy, deep 808 bass, dembow drums, sub-heavy club mix, warm male vocal, Spanish-language vocals, Latin American Spanish, extended instrumental intro, extended instrumental outro, DJ-friendly arrangement
+  B  [vocal] reggaeton, 94 BPM, F minor, playful, bouncy, deep 808 bass, dembow drums, sub-heavy club mix, gritty male vocal, Spanish-language vocals, Latin American Spanish, extended instrumental intro, extended instrumental outro, DJ-friendly arrangement
+  C  [production] reggaeton, 94 BPM, F minor, playful, bouncy, deep 808 bass, dembow drums, bright mix, warm male vocal, Spanish-language vocals, Latin American Spanish, extended instrumental intro, extended instrumental outro, DJ-friendly arrangement
+
+Structure (perreo)
+  [Intro] [Hook] [Verse 1] [Hook] [Verse 2] [Hook] [Breakdown] [Hook] [Outro]
+
+Lyric brief
+  [Intro] Edición DJ: déjalo instrumental (batería + bajo, sin voz) para poder mezclar la pista al entrar y al salir; 16 compases es el estándar de club.
+  [Hook] 2-4 líneas de 5-8 sílabas, se repite igual cada vez; una sola idea.
+  [Verse 1] 4 líneas de 8-10 sílabas, esquema ABAB o AABB; una escena, sustantivos concretos.
+  [Breakdown] 2 líneas, la mitad de densidad que un verso; voz y un instrumento.
+  [Outro] Edición DJ: déjalo instrumental (batería + bajo, sin voz) para poder mezclar la pista al entrar y al salir; 16 compases es el estándar de club.
+
+Next
+  write the lyrics with these tags, then:
+  python3 scripts/lyric_meter.py lyrics.txt
+  python3 scripts/suno_lint.py lyrics.txt --dj --style-text "reggaeton, 94 BPM, F minor, playful, bouncy, deep 808 bass, dembow drums, sub-heavy club mix, warm male vocal, Spanish-language vocals, Latin American Spanish, extended instrumental intro, extended instrumental outro, DJ-friendly arrangement"

@@ -1,0 +1,2 @@
+document.addEventListener('click',e=>{const b=e.target.closest('[data-copy]');if(!b)return;navigator.clipboard.writeText(b.dataset.copy).then(()=>{b.textContent=(window.T||{}).copied||'Copied';b.classList.add('done');setTimeout(()=>{b.textContent=(window.T||{}).copy||'Copy';b.classList.remove('done')},1600)})});
+document.querySelectorAll('.copy').forEach(b=>b.textContent=(window.T||{}).copy||'Copy');

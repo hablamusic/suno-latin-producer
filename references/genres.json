@@ -1,0 +1,1156 @@
+{
+  "_about": "Editorial defaults used by scripts/brief.py: typical tempo ranges, keys, instruments and vocal descriptors per genre, with Latin American, Brazilian and DJ genres. Starting points for a style prompt, not measurements. Edit freely; add a genre by copying a block. CC BY 4.0. Base data from UniqAI suno-producer (https://github.com/uniqaiapp/suno-producer); Latin, Brazilian and DJ genres by HablaMusic (https://github.com/hablamusic/suno-latin-producer).",
+  "structures": {
+    "pop": [
+      "Intro",
+      "Verse 1",
+      "Pre-Chorus",
+      "Chorus",
+      "Verse 2",
+      "Pre-Chorus",
+      "Chorus",
+      "Bridge",
+      "Chorus",
+      "Outro"
+    ],
+    "ballad": [
+      "Intro",
+      "Verse 1",
+      "Chorus",
+      "Verse 2",
+      "Chorus",
+      "Bridge",
+      "Chorus",
+      "Outro"
+    ],
+    "edm": [
+      "Intro",
+      "Verse 1",
+      "Build",
+      "Drop",
+      "Verse 2",
+      "Build",
+      "Drop",
+      "Breakdown",
+      "Drop",
+      "Outro"
+    ],
+    "hiphop": [
+      "Intro",
+      "Hook",
+      "Verse 1",
+      "Hook",
+      "Verse 2",
+      "Hook",
+      "Bridge",
+      "Hook",
+      "Outro"
+    ],
+    "rock": [
+      "Intro",
+      "Verse 1",
+      "Chorus",
+      "Verse 2",
+      "Chorus",
+      "Guitar Solo",
+      "Bridge",
+      "Chorus",
+      "Outro"
+    ],
+    "lofi": [
+      "Intro",
+      "Verse 1",
+      "Hook",
+      "Verse 2",
+      "Hook",
+      "Interlude",
+      "Hook",
+      "Outro"
+    ],
+    "folk": [
+      "Intro",
+      "Verse 1",
+      "Verse 2",
+      "Chorus",
+      "Verse 3",
+      "Chorus",
+      "Bridge",
+      "Chorus",
+      "Outro"
+    ],
+    "short": [
+      "Verse 1",
+      "Chorus",
+      "Verse 2",
+      "Chorus",
+      "Outro"
+    ],
+    "perreo": [
+      "Intro",
+      "Hook",
+      "Verse 1",
+      "Hook",
+      "Verse 2",
+      "Hook",
+      "Breakdown",
+      "Hook",
+      "Outro"
+    ]
+  },
+  "moods": {
+    "melancholic": [
+      "melancholic",
+      "wistful",
+      "bittersweet",
+      "rainy"
+    ],
+    "euphoric": [
+      "euphoric",
+      "anthemic",
+      "uplifting",
+      "soaring"
+    ],
+    "dark": [
+      "dark",
+      "brooding",
+      "tense",
+      "cinematic"
+    ],
+    "warm": [
+      "warm",
+      "intimate",
+      "cozy",
+      "nostalgic"
+    ],
+    "playful": [
+      "playful",
+      "bouncy",
+      "cheeky",
+      "bright"
+    ],
+    "angry": [
+      "aggressive",
+      "raw",
+      "urgent",
+      "relentless"
+    ],
+    "dreamy": [
+      "dreamy",
+      "hazy",
+      "floating",
+      "ethereal"
+    ]
+  },
+  "vocals": {
+    "female": [
+      "warm female vocal",
+      "breathy female vocal",
+      "powerful female vocal",
+      "soft female vocal"
+    ],
+    "male": [
+      "warm male vocal",
+      "gritty male vocal",
+      "smooth male vocal",
+      "low male vocal"
+    ],
+    "duet": [
+      "male and female duet",
+      "call-and-response duet"
+    ],
+    "choir": [
+      "layered choir",
+      "gang vocals"
+    ],
+    "none": [
+      "instrumental"
+    ]
+  },
+  "genres": {
+    "synthwave": {
+      "bpm": [
+        84,
+        118
+      ],
+      "keys": [
+        "A minor",
+        "F# minor",
+        "C minor",
+        "E minor"
+      ],
+      "feel": "mid-tempo, four-on-the-floor",
+      "instruments": [
+        "analog synth arpeggios",
+        "gated reverb drums",
+        "fat synth bass",
+        "retro drum machine"
+      ],
+      "production": [
+        "80s production",
+        "chorus-drenched guitars",
+        "wide stereo pads",
+        "tape saturation"
+      ],
+      "default_vocal": "female",
+      "structure": "pop"
+    },
+    "indie pop": {
+      "bpm": [
+        98,
+        128
+      ],
+      "keys": [
+        "C major",
+        "G major",
+        "D major",
+        "A major"
+      ],
+      "feel": "uptempo, bright",
+      "instruments": [
+        "jangly electric guitar",
+        "tight live drums",
+        "clean bass",
+        "sparkly synth lead"
+      ],
+      "production": [
+        "lo-fi warmth",
+        "room reverb",
+        "doubled vocals",
+        "handclaps"
+      ],
+      "default_vocal": "female",
+      "structure": "pop"
+    },
+    "lo-fi hip hop": {
+      "bpm": [
+        70,
+        90
+      ],
+      "keys": [
+        "D minor",
+        "F major",
+        "Bb major",
+        "G minor"
+      ],
+      "feel": "laid-back, head-nod",
+      "instruments": [
+        "dusty drum break",
+        "Rhodes piano",
+        "muted trumpet",
+        "vinyl crackle"
+      ],
+      "production": [
+        "tape hiss",
+        "sidechain pump",
+        "low-passed samples",
+        "swung hats"
+      ],
+      "default_vocal": "none",
+      "structure": "lofi"
+    },
+    "boom bap": {
+      "bpm": [
+        86,
+        96
+      ],
+      "keys": [
+        "A minor",
+        "E minor",
+        "C minor"
+      ],
+      "feel": "mid-tempo, hard-hitting",
+      "instruments": [
+        "chopped soul sample",
+        "punchy kick and snare",
+        "upright bass",
+        "scratches"
+      ],
+      "production": [
+        "90s East Coast production",
+        "gritty sampling",
+        "vinyl texture"
+      ],
+      "default_vocal": "male",
+      "structure": "hiphop"
+    },
+    "trap": {
+      "bpm": [
+        130,
+        160
+      ],
+      "keys": [
+        "F minor",
+        "C# minor",
+        "G minor"
+      ],
+      "feel": "half-time feel, heavy",
+      "instruments": [
+        "808 bass",
+        "rolling hi-hats",
+        "dark piano",
+        "bell melody"
+      ],
+      "production": [
+        "modern trap production",
+        "autotuned ad-libs",
+        "sub-heavy mix"
+      ],
+      "default_vocal": "male",
+      "structure": "hiphop"
+    },
+    "house": {
+      "bpm": [
+        120,
+        128
+      ],
+      "keys": [
+        "A minor",
+        "F minor",
+        "C minor"
+      ],
+      "feel": "four-on-the-floor, driving",
+      "instruments": [
+        "piano stabs",
+        "filtered disco sample",
+        "punchy kick",
+        "rolling bassline"
+      ],
+      "production": [
+        "club mix",
+        "sidechain compression",
+        "filter sweeps",
+        "vocal chops"
+      ],
+      "default_vocal": "female",
+      "structure": "edm"
+    },
+    "techno": {
+      "bpm": [
+        126,
+        140
+      ],
+      "keys": [
+        "F minor",
+        "D minor",
+        "A minor"
+      ],
+      "feel": "driving, hypnotic",
+      "instruments": [
+        "pounding kick",
+        "acid bassline",
+        "metallic percussion",
+        "rumbling sub"
+      ],
+      "production": [
+        "warehouse reverb",
+        "minimal arrangement",
+        "long filter builds"
+      ],
+      "default_vocal": "none",
+      "structure": "edm"
+    },
+    "drum and bass": {
+      "bpm": [
+        170,
+        176
+      ],
+      "keys": [
+        "F minor",
+        "G minor",
+        "A minor"
+      ],
+      "feel": "fast, breakbeat",
+      "instruments": [
+        "amen break",
+        "Reese bass",
+        "atmospheric pads",
+        "pitched vocal chops"
+      ],
+      "production": [
+        "liquid production",
+        "rolling breaks",
+        "huge sub"
+      ],
+      "default_vocal": "female",
+      "structure": "edm"
+    },
+    "pop punk": {
+      "bpm": [
+        150,
+        185
+      ],
+      "keys": [
+        "E major",
+        "A major",
+        "D major",
+        "C# minor"
+      ],
+      "feel": "fast, energetic",
+      "instruments": [
+        "palm-muted power chords",
+        "fast drums",
+        "driving bass",
+        "octave lead guitar"
+      ],
+      "production": [
+        "2000s pop punk production",
+        "gang vocals",
+        "tight double-tracked guitars"
+      ],
+      "default_vocal": "male",
+      "structure": "rock"
+    },
+    "indie rock": {
+      "bpm": [
+        100,
+        140
+      ],
+      "keys": [
+        "E minor",
+        "G major",
+        "D major",
+        "B minor"
+      ],
+      "feel": "mid-tempo, driving",
+      "instruments": [
+        "overdriven guitars",
+        "live drums",
+        "melodic bass",
+        "tambourine"
+      ],
+      "production": [
+        "garage production",
+        "room mics",
+        "fuzz",
+        "raw mix"
+      ],
+      "default_vocal": "male",
+      "structure": "rock"
+    },
+    "post-rock": {
+      "bpm": [
+        70,
+        110
+      ],
+      "keys": [
+        "D major",
+        "E minor",
+        "C major"
+      ],
+      "feel": "slow build, dynamic",
+      "instruments": [
+        "tremolo guitars",
+        "delay-soaked leads",
+        "crescendo drums",
+        "strings"
+      ],
+      "production": [
+        "cinematic production",
+        "long reverb tails",
+        "quiet-loud dynamics"
+      ],
+      "default_vocal": "none",
+      "structure": "ballad"
+    },
+    "folk": {
+      "bpm": [
+        80,
+        120
+      ],
+      "keys": [
+        "G major",
+        "D major",
+        "C major",
+        "A minor"
+      ],
+      "feel": "mid-tempo, strummed",
+      "instruments": [
+        "acoustic guitar",
+        "fiddle",
+        "upright bass",
+        "mandolin",
+        "harmonica"
+      ],
+      "production": [
+        "live-in-a-room production",
+        "close-miked vocal",
+        "minimal reverb"
+      ],
+      "default_vocal": "male",
+      "structure": "folk"
+    },
+    "country": {
+      "bpm": [
+        90,
+        130
+      ],
+      "keys": [
+        "G major",
+        "D major",
+        "A major",
+        "E major"
+      ],
+      "feel": "mid-tempo, steady",
+      "instruments": [
+        "telecaster twang",
+        "pedal steel",
+        "acoustic guitar",
+        "brushed drums"
+      ],
+      "production": [
+        "Nashville production",
+        "tight harmonies",
+        "warm mix"
+      ],
+      "default_vocal": "male",
+      "structure": "pop"
+    },
+    "r&b": {
+      "bpm": [
+        60,
+        95
+      ],
+      "keys": [
+        "Eb major",
+        "Bb minor",
+        "F minor",
+        "Ab major"
+      ],
+      "feel": "slow groove, smooth",
+      "instruments": [
+        "electric piano",
+        "finger-snap percussion",
+        "deep bass",
+        "soft pads"
+      ],
+      "production": [
+        "modern R&B production",
+        "stacked harmonies",
+        "silky mix"
+      ],
+      "default_vocal": "female",
+      "structure": "pop"
+    },
+    "soul": {
+      "bpm": [
+        70,
+        110
+      ],
+      "keys": [
+        "C major",
+        "F major",
+        "G minor",
+        "D minor"
+      ],
+      "feel": "mid-tempo, grooving",
+      "instruments": [
+        "Hammond organ",
+        "horn section",
+        "live drums",
+        "wah guitar"
+      ],
+      "production": [
+        "60s soul production",
+        "tape warmth",
+        "live room"
+      ],
+      "default_vocal": "female",
+      "structure": "pop"
+    },
+    "jazz": {
+      "bpm": [
+        60,
+        200
+      ],
+      "keys": [
+        "Bb major",
+        "F major",
+        "Eb major",
+        "C minor"
+      ],
+      "feel": "swing",
+      "instruments": [
+        "upright bass",
+        "brushed drums",
+        "piano trio",
+        "muted trumpet",
+        "tenor sax"
+      ],
+      "production": [
+        "small club recording",
+        "natural room",
+        "minimal processing"
+      ],
+      "default_vocal": "female",
+      "structure": "ballad"
+    },
+    "ambient": {
+      "bpm": [
+        50,
+        80
+      ],
+      "keys": [
+        "C major",
+        "D major",
+        "A minor"
+      ],
+      "feel": "beatless, slow",
+      "instruments": [
+        "evolving pads",
+        "field recordings",
+        "granular textures",
+        "soft piano"
+      ],
+      "production": [
+        "ambient production",
+        "long reverb",
+        "slow swells"
+      ],
+      "default_vocal": "none",
+      "structure": "ballad"
+    },
+    "metal": {
+      "bpm": [
+        120,
+        200
+      ],
+      "keys": [
+        "E minor",
+        "D minor",
+        "C# minor",
+        "B minor"
+      ],
+      "feel": "fast, heavy",
+      "instruments": [
+        "downtuned guitars",
+        "double-kick drums",
+        "chugging riffs",
+        "shredding lead"
+      ],
+      "production": [
+        "modern metal production",
+        "tight low end",
+        "layered rhythm guitars"
+      ],
+      "default_vocal": "male",
+      "structure": "rock"
+    },
+    "reggaeton": {
+      "bpm": [
+        88,
+        100
+      ],
+      "keys": [
+        "A minor",
+        "F minor",
+        "G minor",
+        "C# minor"
+      ],
+      "feel": "dembow groove",
+      "instruments": [
+        "dembow drums",
+        "plucked synth",
+        "deep 808 bass",
+        "perreo percussion"
+      ],
+      "production": [
+        "modern Latin urban production",
+        "bright mix",
+        "vocal chops",
+        "sub-heavy club mix"
+      ],
+      "default_vocal": "male",
+      "structure": "perreo"
+    },
+    "piano ballad": {
+      "bpm": [
+        60,
+        80
+      ],
+      "keys": [
+        "C major",
+        "A minor",
+        "F major",
+        "Eb major"
+      ],
+      "feel": "slow, rubato",
+      "instruments": [
+        "grand piano",
+        "strings",
+        "soft brushed drums",
+        "upright bass"
+      ],
+      "production": [
+        "intimate production",
+        "close vocal",
+        "orchestral swell at the end"
+      ],
+      "default_vocal": "female",
+      "structure": "ballad"
+    },
+    "dembow": {
+      "bpm": [
+        115,
+        130
+      ],
+      "keys": [
+        "A minor",
+        "D minor",
+        "E minor"
+      ],
+      "feel": "fast dembow loop",
+      "instruments": [
+        "dembow drum loop",
+        "synth stabs",
+        "808 bass",
+        "shakers"
+      ],
+      "production": [
+        "raw Dominican street production",
+        "loud punchy mix",
+        "chanted vocal hooks"
+      ],
+      "default_vocal": "male",
+      "structure": "perreo"
+    },
+    "latin trap": {
+      "bpm": [
+        130,
+        150
+      ],
+      "keys": [
+        "C minor",
+        "G# minor",
+        "F minor"
+      ],
+      "feel": "half-time trap bounce",
+      "instruments": [
+        "808 bass",
+        "hi-hat rolls",
+        "dark piano",
+        "trap snare"
+      ],
+      "production": [
+        "dark modern trap mix",
+        "heavy autotune",
+        "sparse arrangement"
+      ],
+      "default_vocal": "male",
+      "structure": "hiphop"
+    },
+    "cumbia": {
+      "bpm": [
+        88,
+        104
+      ],
+      "keys": [
+        "A minor",
+        "D minor",
+        "G major",
+        "C major"
+      ],
+      "feel": "two-step cumbia shuffle",
+      "instruments": [
+        "güiro",
+        "accordion",
+        "congas",
+        "electric bass"
+      ],
+      "production": [
+        "warm analog tropical production",
+        "live band feel",
+        "cumbia sonidera echo"
+      ],
+      "default_vocal": "male",
+      "structure": "pop"
+    },
+    "bachata": {
+      "bpm": [
+        120,
+        136
+      ],
+      "keys": [
+        "E minor",
+        "A minor",
+        "D major"
+      ],
+      "feel": "bachata four-beat sway",
+      "instruments": [
+        "requinto guitar",
+        "bongos",
+        "güira",
+        "electric bass"
+      ],
+      "production": [
+        "polished romantic bachata production",
+        "clean guitars",
+        "intimate vocal"
+      ],
+      "default_vocal": "male",
+      "structure": "ballad"
+    },
+    "salsa": {
+      "bpm": [
+        170,
+        200
+      ],
+      "keys": [
+        "D minor",
+        "G minor",
+        "C major"
+      ],
+      "feel": "clave-driven salsa",
+      "instruments": [
+        "piano montuno",
+        "brass section",
+        "timbales",
+        "congas"
+      ],
+      "production": [
+        "big band live recording",
+        "bright horns",
+        "full salsa orchestra"
+      ],
+      "default_vocal": "male",
+      "structure": "pop"
+    },
+    "merengue": {
+      "bpm": [
+        120,
+        160
+      ],
+      "keys": [
+        "C major",
+        "G major",
+        "A minor"
+      ],
+      "feel": "fast merengue two-step",
+      "instruments": [
+        "tambora",
+        "güira",
+        "accordion",
+        "alto saxophone"
+      ],
+      "production": [
+        "festive live band production",
+        "bright mix"
+      ],
+      "default_vocal": "male",
+      "structure": "pop"
+    },
+    "corridos tumbados": {
+      "bpm": [
+        70,
+        96
+      ],
+      "keys": [
+        "D minor",
+        "A minor",
+        "E minor"
+      ],
+      "feel": "swinging corrido rhythm",
+      "instruments": [
+        "requinto guitar",
+        "tololoche bass",
+        "twelve-string guitar",
+        "trumpet"
+      ],
+      "production": [
+        "raw acoustic regional Mexican production",
+        "modern trap-influenced mix",
+        "close-mic vocal"
+      ],
+      "default_vocal": "male",
+      "structure": "folk"
+    },
+    "latin pop": {
+      "bpm": [
+        94,
+        110
+      ],
+      "keys": [
+        "A minor",
+        "E minor",
+        "B minor",
+        "C major"
+      ],
+      "feel": "mid-tempo Latin pop groove",
+      "instruments": [
+        "acoustic guitar",
+        "reggaeton-lite drums",
+        "synth bass",
+        "bright pads"
+      ],
+      "production": [
+        "glossy radio production",
+        "wide stereo mix"
+      ],
+      "default_vocal": "female",
+      "structure": "pop"
+    },
+    "moombahton": {
+      "bpm": [
+        106,
+        112
+      ],
+      "keys": [
+        "F minor",
+        "G minor",
+        "A minor"
+      ],
+      "feel": "slowed dembow house",
+      "instruments": [
+        "dembow drums",
+        "dutch house synth",
+        "big bass",
+        "tribal percussion"
+      ],
+      "production": [
+        "festival EDM production",
+        "punchy drop"
+      ],
+      "default_vocal": "female",
+      "structure": "edm"
+    },
+    "guaracha": {
+      "bpm": [
+        125,
+        132
+      ],
+      "keys": [
+        "A minor",
+        "D minor"
+      ],
+      "feel": "aleteo tribal shuffle",
+      "instruments": [
+        "tribal drums",
+        "Latin percussion",
+        "synth lead",
+        "horn stabs"
+      ],
+      "production": [
+        "festival club production",
+        "loud drop",
+        "crowd chants"
+      ],
+      "default_vocal": "none",
+      "structure": "edm"
+    },
+    "latin house": {
+      "bpm": [
+        120,
+        126
+      ],
+      "keys": [
+        "A minor",
+        "F minor",
+        "D minor"
+      ],
+      "feel": "four-on-the-floor with Latin percussion",
+      "instruments": [
+        "four-on-the-floor kick",
+        "piano chords",
+        "congas",
+        "timbales"
+      ],
+      "production": [
+        "club-ready mix",
+        "warm house production"
+      ],
+      "default_vocal": "female",
+      "structure": "edm"
+    },
+    "tech house": {
+      "bpm": [
+        124,
+        128
+      ],
+      "keys": [
+        "F minor",
+        "A minor",
+        "G minor"
+      ],
+      "feel": "rolling tech house groove",
+      "instruments": [
+        "rolling bassline",
+        "crisp hi-hats",
+        "percussive loops",
+        "vocal stabs"
+      ],
+      "production": [
+        "club-ready mix",
+        "tight low end"
+      ],
+      "default_vocal": "none",
+      "structure": "edm"
+    },
+    "afro house": {
+      "bpm": [
+        118,
+        124
+      ],
+      "keys": [
+        "A minor",
+        "E minor",
+        "D minor"
+      ],
+      "feel": "hypnotic afro groove",
+      "instruments": [
+        "tribal percussion",
+        "shakers",
+        "deep bass",
+        "vocal chants"
+      ],
+      "production": [
+        "hypnotic club production",
+        "organic percussion"
+      ],
+      "default_vocal": "female",
+      "structure": "edm"
+    },
+    "amapiano": {
+      "bpm": [
+        110,
+        115
+      ],
+      "keys": [
+        "F minor",
+        "A minor",
+        "C minor"
+      ],
+      "feel": "laid-back amapiano swing",
+      "instruments": [
+        "log drums",
+        "jazzy piano",
+        "shakers",
+        "soft pads"
+      ],
+      "production": [
+        "airy South African club production",
+        "wide low end"
+      ],
+      "default_vocal": "male",
+      "structure": "edm"
+    },
+    "funk carioca": {
+      "bpm": [
+        125,
+        135
+      ],
+      "keys": [
+        "A minor",
+        "C minor",
+        "D minor"
+      ],
+      "feel": "tamborzão baile funk beat",
+      "instruments": [
+        "tamborzão drums",
+        "808 bass",
+        "vocal chops",
+        "synth stabs"
+      ],
+      "production": [
+        "raw baile funk production",
+        "loud punchy mix",
+        "MC chants"
+      ],
+      "default_vocal": "male",
+      "structure": "perreo"
+    },
+    "brazilian phonk": {
+      "bpm": [
+        125,
+        135
+      ],
+      "keys": [
+        "F minor",
+        "C minor"
+      ],
+      "feel": "aggressive funk phonk",
+      "instruments": [
+        "cowbell melody",
+        "distorted 808",
+        "tamborzão drums",
+        "vocal chops"
+      ],
+      "production": [
+        "distorted lo-fi production",
+        "heavy saturation"
+      ],
+      "default_vocal": "none",
+      "structure": "edm"
+    },
+    "piseiro": {
+      "bpm": [
+        145,
+        165
+      ],
+      "keys": [
+        "A minor",
+        "E minor",
+        "D major"
+      ],
+      "feel": "fast pisadinha shuffle",
+      "instruments": [
+        "keyboard accordion lead",
+        "synth bass",
+        "electronic drums",
+        "claps"
+      ],
+      "production": [
+        "northeast Brazilian party production",
+        "bright mix"
+      ],
+      "default_vocal": "male",
+      "structure": "pop"
+    },
+    "sertanejo": {
+      "bpm": [
+        86,
+        112
+      ],
+      "keys": [
+        "G major",
+        "D major",
+        "E minor"
+      ],
+      "feel": "sertanejo country swing",
+      "instruments": [
+        "acoustic guitar",
+        "viola caipira",
+        "accordion",
+        "electric bass"
+      ],
+      "production": [
+        "arena live production",
+        "polished Brazilian country mix"
+      ],
+      "default_vocal": "duet",
+      "structure": "pop"
+    },
+    "pagode": {
+      "bpm": [
+        90,
+        110
+      ],
+      "keys": [
+        "C major",
+        "G major",
+        "A minor"
+      ],
+      "feel": "samba-pagode swing",
+      "instruments": [
+        "cavaquinho",
+        "pandeiro",
+        "tantã",
+        "surdo"
+      ],
+      "production": [
+        "warm roda de samba production",
+        "live percussion"
+      ],
+      "default_vocal": "male",
+      "structure": "pop"
+    }
+  }
+}

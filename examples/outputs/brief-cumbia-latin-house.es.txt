@@ -1,0 +1,23 @@
+suno-latin-producer brief  cumbia x latin house
+tempo 96 BPM (range 88-104) · key G major · mood warm · vocal male · lang es · seed 7
+
+Style prompt (paste into the Style field)
+  A  [base] cumbia, latin house, 96 BPM, G major, warm, intimate, accordion, electric bass, four-on-the-floor kick, cumbia sonidera echo, club-ready mix, warm male vocal, Spanish-language vocals, Latin American Spanish
+  B  [vocal] cumbia, latin house, 96 BPM, G major, warm, intimate, accordion, electric bass, four-on-the-floor kick, cumbia sonidera echo, club-ready mix, gritty male vocal, Spanish-language vocals, Latin American Spanish
+  C  [production] cumbia, latin house, 96 BPM, G major, warm, intimate, accordion, electric bass, four-on-the-floor kick, warm analog tropical production, club-ready mix, warm male vocal, Spanish-language vocals, Latin American Spanish
+
+Structure (pop)
+  [Intro] [Verse 1] [Pre-Chorus] [Chorus] [Verse 2] [Pre-Chorus] [Chorus] [Bridge] [Chorus] [Outro]
+
+Lyric brief
+  [Intro] instrumental o una sola línea; marca el tempo y el instrumento principal.
+  [Verse 1] 4 líneas de 8-10 sílabas, esquema ABAB o AABB; una escena, sustantivos concretos.
+  [Pre-Chorus] 2 líneas que suben; termina con una idea abierta que el coro responde.
+  [Chorus] 4 líneas de 6-9 sílabas; la frase-título en la línea 1 y la 4; las palabras más simples de la canción.
+  [Bridge] 2-4 líneas, un ángulo nuevo o una respuesta al coro; no repitas la línea-título.
+  [Outro] repite la línea-título una o dos veces, luego (fade out).
+
+Next
+  write the lyrics with these tags, then:
+  python3 scripts/lyric_meter.py lyrics.txt
+  python3 scripts/suno_lint.py lyrics.txt --style-text "cumbia, latin house, 96 BPM, G major, warm, intimate, accordion, electric bass, four-on-the-floor kick, cumbia sonidera echo, club-ready mix, warm male vocal, Spanish-language vocals, Latin American Spanish"

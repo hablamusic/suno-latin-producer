@@ -1,0 +1,30 @@
+lyric_meter  examples/lyrics/baile-na-laje.pt.txt  (lang: pt)
+[Intro]        empty
+[Verse 1]      4 lines · syllables 8-10 · scheme AABb
+   1   8  Sexta-feira, a laje acendeu                  A
+   2  10  O grave bate e o morro respondeu             A
+   3   9  Chinelo, boné, o céu de neon                 B
+   4  10  Todo mundo canta no mesmo tom                b
+[Pre-Chorus]   2 lines · syllables 9 · scheme AB
+   1   9  Sobe o volume, deixa rolar                   A
+   2   9  Ninguém aqui quer ir pra casa                B
+[Chorus]       4 lines · syllables 5-6 · scheme ABAB
+   1   6  É baile na laje, ô                           A
+   2   5  Até o sol chegar                             B
+   3   6  É baile na laje, ô                           A
+   4   5  Ninguém vai parar                            B
+[Verse 2]      4 lines · syllables 9-11 · scheme AABB
+   1   9  O tamborzão chama, a rua vem                 A
+   2  11  A vizinha dança e o porteiro também          A
+   3  11  Uma luz piscando lá no paredão               B
+   4  11  E a cidade inteira no meu coração            B
+[Pre-Chorus]   2 lines · syllables 9 · scheme AB
+   1   9  Sobe o volume, deixa rolar                   A
+   2   9  Ninguém aqui quer ir pra casa                B
+[Chorus]       4 lines · syllables 5-6 · scheme ABAB
+   1   6  É baile na laje, ô                           A
+   2   5  Até o sol chegar                             B
+   3   6  É baile na laje, ô                           A
+   4   5  Ninguém vai parar                            B
+[Outro]        empty
++ no length or rhyme warnings

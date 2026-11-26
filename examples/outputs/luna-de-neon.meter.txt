@@ -1,0 +1,37 @@
+lyric_meter  examples/lyrics/luna-de-neon.es.txt  (lang: es)
+[Intro]        empty
+[Hook]         4 lines · syllables 5-12 · scheme Aaaa
+   1  10  Luna de neón, prende la ciudad               A
+   2  10  Baila sin razón, nadie va a mirar            a
+   3  12  Luna de neón, quédate un poquito más         a
+   4   5  (un poquito más)                             a
+[Verse 1]      4 lines · syllables 11-13 · scheme AABB
+   1  13  Llegaste tarde con tu risa de verano         A
+   2  12  Las luces bajas y un mensaje en la mano      A
+   3  12  El bajo pega y se calienta la pista          B
+   4  11  Te pierdo un rato y vuelves a mi vista       B
+[Hook]         4 lines · syllables 5-12 · scheme Aaaa
+   1  10  Luna de neón, prende la ciudad               A
+   2  10  Baila sin razón, nadie va a mirar            a
+   3  12  Luna de neón, quédate un poquito más         a
+   4   5  (un poquito más)                             a
+[Verse 2]      4 lines · syllables 11-12 · scheme AABB
+   1  11  Dos de la mañana y nadie quiere irse         A
+   2  11  El DJ baja el tempo para despedirse          A
+   3  12  Tu sombra en la pared dibuja una canción     B
+   4  11  Y el piso se mueve con el corazón            B
+[Hook]         4 lines · syllables 5-12 · scheme Aaaa
+   1  10  Luna de neón, prende la ciudad               A
+   2  10  Baila sin razón, nadie va a mirar            a
+   3  12  Luna de neón, quédate un poquito más         a
+   4   5  (un poquito más)                             a
+[Breakdown]    2 lines · syllables 4-5 · scheme AB
+   1   5  Solo tú y el bajo                            A
+   2   4  Solo tú y yo                                 B
+[Hook]         4 lines · syllables 5-12 · scheme Aaaa
+   1  10  Luna de neón, prende la ciudad               A
+   2  10  Baila sin razón, nadie va a mirar            a
+   3  12  Luna de neón, quédate un poquito más         a
+   4   5  (un poquito más)                             a
+[Outro]        empty
++ no length or rhyme warnings

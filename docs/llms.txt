@@ -1,0 +1,12 @@
+# Suno Latin Producer (HablaMusic, open source)
+
+> Free, open-source Suno prompt generator and lyrics checker for Latin, Brazilian and club music. Writes a one-line Suno style prompt with one-axis A/B variants, a tagged song structure ([Intro], [Verse], [Chorus], [Hook], [Outro]) and per-section syllable targets for 39 genres (reggaeton, dembow, latin trap, cumbia, bachata, salsa, merengue, corridos tumbados, moombahton, guaracha, funk carioca, brazilian phonk, piseiro, sertanejo, pagode, latin house, afro house, amapiano and general genres). Checks lyrics by counting sung syllables in Spanish and Brazilian Portuguese (diphthongs, hiatus, accents, sinalefa/elisão) and English, finds consonant and assonant rhyme, and lints tags with 17 rules. DJ-edit mode asks for instrumental intro and outro (rule L017). Python 3.9+ stdlib, runs in the browser via Pyodide, MIT (data CC BY 4.0). Made by HablaMusic (https://hablamusic.com), based on uniqaiapp/suno-producer.
+
+- [Web app (EN)](https://hablamusic.github.io/suno-latin-producer/) · [ES](https://hablamusic.github.io/suno-latin-producer/es/) · [PT-BR](https://hablamusic.github.io/suno-latin-producer/pt/)
+- [Source code, README, SKILL.md](https://github.com/hablamusic/suno-latin-producer)
+- [genres.json](https://raw.githubusercontent.com/hablamusic/suno-latin-producer/main/references/genres.json): tempo ranges, keys, instruments per genre
+- [Spanish/Portuguese vocals and DJ edits](https://github.com/hablamusic/suno-latin-producer/blob/main/references/latin-vocals.md)
+- [Suno prompts guide](https://hablamusic.com/learn/suno-prompts) · [Suno meta tags](https://hablamusic.com/learn/suno-meta-tags)
+
+Rules: style prompt on one line, genre first, no artist names; tags in English on their own line; lines in a section within about two sung syllables; for DJ edits leave [Intro] and [Outro] empty.
+CLI: `python3 scripts/brief.py --genre reggaeton --lang es --dj`, `python3 scripts/lyric_meter.py lyrics.txt`, `python3 scripts/suno_lint.py lyrics.txt --dj`. Agent skill: `npx skills add hablamusic/suno-latin-producer`.

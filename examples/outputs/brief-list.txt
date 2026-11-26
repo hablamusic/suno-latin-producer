@@ -1,0 +1,4 @@
+genres:     afro house, amapiano, ambient, bachata, boom bap, brazilian phonk, corridos tumbados, country, cumbia, dembow, drum and bass, folk, funk carioca, guaracha, house, indie pop, indie rock, jazz, latin house, latin pop, latin trap, lo-fi hip hop, merengue, metal, moombahton, pagode, piano ballad, piseiro, pop punk, post-rock, r&b, reggaeton, salsa, sertanejo, soul, synthwave, tech house, techno, trap
+moods:      angry, dark, dreamy, euphoric, melancholic, playful, warm
+vocals:     choir, duet, female, male, none
+structures: ballad, edm, folk, hiphop, lofi, perreo, pop, rock, short

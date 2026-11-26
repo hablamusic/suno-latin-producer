@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Suno Latin Producer: free Suno prompt and lyrics checker for reggaeton, cumbia and DJ edits</title>
+<meta name="description" content="Free Suno prompt generator for Latin, Brazilian and club music: style prompt, [Verse]/[Chorus] tags and a lyrics checker that counts sung syllables in Spanish and Portuguese. DJ edits with instrumental intros. Open source, runs in your browser.">
+<link rel="canonical" href="https://hablamusic.github.io/suno-latin-producer/">
+<link rel="alternate" hreflang="en" href="https://hablamusic.github.io/suno-latin-producer/"><link rel="alternate" hreflang="es" href="https://hablamusic.github.io/suno-latin-producer/es/"><link rel="alternate" hreflang="pt-BR" href="https://hablamusic.github.io/suno-latin-producer/pt/"><link rel="alternate" hreflang="x-default" href="https://hablamusic.github.io/suno-latin-producer/">
+<meta name="author" content="HablaMusic">
+<meta name="theme-color" content="#1a1d20">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="HablaMusic open source">
+<meta property="og:title" content="Suno prompts for reggaeton, cumbia, funk and DJ edits (free)">
+<meta property="og:description" content="Free Suno prompt generator for Latin, Brazilian and club music: style prompt, [Verse]/[Chorus] tags and a lyrics checker that counts sung syllables in Spanish and Portuguese. DJ edits with instrumental intros. Open source, runs in your browser.">
+<meta property="og:url" content="https://hablamusic.github.io/suno-latin-producer/">
+<meta property="og:image" content="https://hablamusic.github.io/suno-latin-producer/og.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Suno Latin Producer by HablaMusic: home studio with lyrics on a laptop">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+<link rel="preload" as="image" href="hero.webp">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://hablamusic.com/#organization", "name": "HablaMusic", "url": "https://hablamusic.com", "logo": "https://hablamusic.com/icon-512.png", "sameAs": ["https://github.com/hablamusic"]}, {"@type": "Person", "@id": "https://www.roimobi.com/#person", "name": "Vlad Yasinski", "url": "https://www.roimobi.com", "sameAs": ["https://www.linkedin.com/in/vlad-yasinski-ua5er/", "https://github.com/ua5er"]}, {"@type": "WebApplication", "name": "Suno prompts for Latin music and DJ edits", "url": "https://hablamusic.github.io/suno-latin-producer/", "applicationCategory": "MultimediaApplication", "operatingSystem": "Any (web browser)", "inLanguage": "en", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "publisher": {"@id": "https://hablamusic.com/#organization"}, "creator": {"@id": "https://www.roimobi.com/#person"}, "description": "Free Suno prompt generator for Latin, Brazilian and club music: style prompt, [Verse]/[Chorus] tags and a lyrics checker that counts sung syllables in Spanish and Portuguese. DJ edits with instrumental intros. Open source, runs in your browser."}, {"@type": "SoftwareSourceCode", "name": "suno-latin-producer", "codeRepository": "https://github.com/hablamusic/suno-latin-producer", "programmingLanguage": "Python", "license": "https://opensource.org/licenses/MIT", "runtimePlatform": "Python 3.9+, web browsers (Pyodide)", "author": {"@id": "https://hablamusic.com/#organization"}, "isBasedOn": "https://github.com/uniqaiapp/suno-producer"}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do I write a Suno prompt for reggaeton?", "acceptedAnswer": {"@type": "Answer", "text": "Put everything on one line, most important first: reggaeton, 94 BPM, F minor, playful, bouncy, dembow drums, deep 808 bass, sub-heavy club mix, warm male vocal, Spanish-language vocals. Pick reggaeton above and the tool writes it with two variants. More in the Suno prompts guide."}}, {"@type": "Question", "name": "Should Suno tags be in Spanish or Portuguese?", "acceptedAnswer": {"@type": "Answer", "text": "No. Keep tags in English, like [Chorus] and [Verse 1]. Suno reads English tags as structure and may sing a translated tag such as [Coro] or [Refrão]. Only the lyrics are in your language."}}, {"@type": "Question", "name": "Why does Suno rush or cut some lines?", "acceptedAnswer": {"@type": "Answer", "text": "Those lines are longer than the rest of the section. Keep each line within about two sung syllables of the others. The checker shows the count per line and warns when a line drifts."}}, {"@type": "Question", "name": "How do I make an AI song a DJ can mix?", "acceptedAnswer": {"@type": "Answer", "text": "Tick DJ edit: the Style line asks for an extended instrumental intro and outro, and the checker warns if [Intro] or [Outro] have sung lines. Then confirm the real BPM and key with the BPM and key finder, because AI models often ignore the key in the prompt."}}, {"@type": "Question", "name": "Is it free? Does it send my lyrics anywhere?", "acceptedAnswer": {"@type": "Answer", "text": "Free and open source (MIT). The Python scripts run inside your browser with Pyodide; your lyrics are never uploaded."}}]}]}</script>
+
+</head>
+<body>
+<a class="sr" href="#main">Skip to content</a>
+<header class="top"><div class="wrap">
+<a class="brand" href="https://hablamusic.com/?utm_source=github&utm_medium=pages&utm_campaign=suno-latin-producer"><img src="favicon.png" alt="" width="30" height="30">HablaMusic</a>
+<nav class="links" aria-label="Main"><a class="hide-m" href="https://hablamusic.github.io/bpm-key-finder/">BPM and key finder</a><a class="hide-m" href="https://hablamusic.github.io/camelot-wheel/">Camelot wheel</a><a class="hide-m" href="https://hablamusic.github.io/awesome-ai-dj-prompts/">AI DJ prompts</a><a href="https://github.com/hablamusic/suno-latin-producer">GitHub</a><span class="langs"><a href="" hreflang="en" aria-current=true>EN</a><a href="es/" hreflang="es">ES</a><a href="pt/" hreflang="pt-BR">PT</a></span></nav>
+</div></header>
+<main id="main">
+
+<section class="hero"><img class="bgimg" src="hero.webp" alt="" width="1600" height="700" fetchpriority="high"><div class="wrap">
+<span class="kicker"><b>●</b> free · open source · runs in your browser</span>
+<h1>Suno prompts for Latin music and DJ edits</h1>
+<p class="lede">Pick a genre and a mood: get the Style line and the tag layout for Suno. Paste your lyrics: see the sung syllables per line, the rhymes and every tag problem, in Spanish, Portuguese or English.</p>
+<div class="ctas"><a class="btn hot" href="#app">Write a prompt ↓</a><a class="btn" href="#check">Check my lyrics</a></div>
+</div></section>
+<section style="padding:28px 0"><div class="wrap"><p class="sub" style="max-width:80ch;margin:0">Suno Latin Producer is a free, open-source tool from HablaMusic that writes Suno style prompts and song structures for 39 genres, including reggaeton, dembow, cumbia, bachata, corridos tumbados and funk carioca, and checks lyrics by counting sung syllables in Spanish and Brazilian Portuguese (with sinalefa) and flagging tag mistakes. A DJ-edit mode asks for instrumental intros and outros so the track can be mixed.</p></div></section>
+<section id="app"><div class="wrap"><h2>1. Write a Suno prompt</h2><p class="sub">Choose the sound. You get three Style lines that differ in one thing each (A/B test them), the tags to paste into Lyrics, and how many lines and syllables each section needs.</p>
+<form id="bf" class="card" style="display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));align-items:end">
+<label class="small muted">Genre<select id="genre" style="width:100%;margin-top:4px"></select></label>
+<label class="small muted">Mood<select id="mood" style="width:100%;margin-top:4px"></select></label>
+<label class="small muted">Vocal<select id="vocal" style="width:100%;margin-top:4px"></select></label>
+<label class="small muted">Lyrics language<select id="blang" style="width:100%;margin-top:4px"><option value="es" selected>Spanish</option><option value="pt">Portuguese (BR)</option><option value="en">English</option></select></label>
+<label class="small" style="grid-column:1/-1;display:flex;gap:8px;align-items:center"><input type="checkbox" id="dj" checked> DJ edit (instrumental intro and outro for mixing)</label>
+<input type="hidden" id="seed" value="4">
+<div style="grid-column:1/-1;display:flex;gap:10px;flex-wrap:wrap"><button class="btn hot" type="submit">Write the prompt</button><button class="btn" type="button" id="shuffle">Another version</button><span id="pystatus" class="small muted" aria-live="polite" style="align-self:center"></span></div>
+</form>
+<div id="bout" style="margin-top:16px" aria-live="polite"></div></div></section>
+<section id="check"><div class="wrap"><h2>2. Check your lyrics</h2><p class="sub">Paste lyrics with [Section] tags. The checker counts syllables the way they are sung and runs the 17 lint rules. Your text stays in your browser.</p>
+<form id="cf" class="card" style="display:grid;gap:12px">
+<textarea id="lyrics" rows="12" placeholder="[Intro]
+
+[Verse 1]
+Llegaste tarde con tu risa de verano
+..." style="width:100%;font:14px/1.5 var(--mono);background:#101214;color:var(--ink);border:1px solid var(--line2);border-radius:10px;padding:12px"></textarea>
+<input id="style" placeholder="Style line (optional): reggaeton, 94 BPM, F minor, ..." style="width:100%">
+<div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center"><label class="small muted">Language <select id="clang"><option value="auto">detect</option><option value="es">Spanish</option><option value="pt">Portuguese (BR)</option><option value="en">English</option></select></label><label class="small" style="display:flex;gap:8px;align-items:center"><input type="checkbox" id="ldj"> DJ edit rules (L017)</label></div>
+<div style="display:flex;gap:10px;flex-wrap:wrap"><button class="btn hot" type="submit">Check</button><button class="btn" type="button" id="sample">Try a sample song</button></div>
+</form>
+<div id="cout" style="margin-top:16px" aria-live="polite"></div></div></section>
+<section><div class="wrap"><h2>How it works</h2><div class="grid3"><div class="card"><h3>Style line</h3><p class="muted" style="margin:0">Genre first, then tempo and key, two mood words, two or three instruments, a production word, the vocal and the language, on one line. No artist names: Suno rejects them.</p></div><div class="card"><h3>Tags</h3><p class="muted" style="margin:0">One English tag per line: [Intro], [Verse 1], [Chorus], [Hook], [Outro]. Translated tags like [Coro] can be sung aloud.</p></div><div class="card"><h3>Even lines</h3><p class="muted" style="margin:0">Suno cannot stretch a line. Keep lines in a section within about two sung syllables of each other; in Spanish &quot;te amo&quot; counts as two.</p></div><div class="card"><h3>DJ edit</h3><p class="muted" style="margin:0">Leave [Intro] and [Outro] empty and ask for an extended instrumental intro and outro, so the track can be beatmatched.</p></div></div>
+<p class="small muted" style="margin-top:18px">Guides on hablamusic.com:</p><ul style="padding-left:18px;margin:4px 0 0"><li><a href="https://hablamusic.com/learn/suno-prompts?utm_source=github&utm_medium=pages&utm_campaign=suno-latin-producer">Suno prompts guide</a></li><li><a href="https://hablamusic.com/learn/suno-meta-tags?utm_source=github&utm_medium=pages&utm_campaign=suno-latin-producer">Suno meta tags</a></li><li><a href="https://hablamusic.com/genres/reggaeton?utm_source=github&utm_medium=pages&utm_campaign=suno-latin-producer">Reggaeton with AI</a></li><li><a href="https://hablamusic.com/learn/how-to-beatmatch?utm_source=github&utm_medium=pages&utm_campaign=suno-latin-producer">How to beatmatch</a></li></ul></div></section>
+<section><div class="wrap"><h2>Run it in the terminal or from an AI agent</h2><p class="sub">Python 3.9+, no packages. The same scripts run this page.</p><div class="cmd"><pre><code>git clone https://github.com/hablamusic/suno-latin-producer
+cd suno-latin-producer
+python3 scripts/brief.py --genre reggaeton --mood playful --lang es --dj
+python3 scripts/lyric_meter.py examples/lyrics/luna-de-neon.es.txt
+
+# as an agent skill (Claude Code, Cursor, Codex)
+npx skills add hablamusic/suno-latin-producer</code></pre><button class="copy" type="button" data-copy="git clone https://github.com/hablamusic/suno-latin-producer
+cd suno-latin-producer
+python3 scripts/brief.py --genre reggaeton --mood playful --lang es --dj
+python3 scripts/lyric_meter.py examples/lyrics/luna-de-neon.es.txt
+
+# as an agent skill (Claude Code, Cursor, Codex)
+npx skills add hablamusic/suno-latin-producer">copy</button></div>
+<p class="small muted" style="margin-top:14px"><a href="https://github.com/hablamusic/suno-latin-producer">github.com/hablamusic/suno-latin-producer</a> · based on <a href="https://github.com/uniqaiapp/suno-producer">uniqaiapp/suno-producer</a></p></div></section>
+<section id="faq"><div class="wrap"><h2>FAQ</h2><details><summary>How do I write a Suno prompt for reggaeton?</summary><p>Put everything on one line, most important first: <code>reggaeton, 94 BPM, F minor, playful, bouncy, dembow drums, deep 808 bass, sub-heavy club mix, warm male vocal, Spanish-language vocals</code>. Pick reggaeton above and the tool writes it with two variants. More in the <a href="https://hablamusic.com/learn/suno-prompts?utm_source=github&utm_medium=pages&utm_campaign=suno-latin-producer">Suno prompts guide</a>.</p></details><details><summary>Should Suno tags be in Spanish or Portuguese?</summary><p>No. Keep tags in English, like [Chorus] and [Verse 1]. Suno reads English tags as structure and may sing a translated tag such as [Coro] or [Refrão]. Only the lyrics are in your language.</p></details><details><summary>Why does Suno rush or cut some lines?</summary><p>Those lines are longer than the rest of the section. Keep each line within about two sung syllables of the others. The checker shows the count per line and warns when a line drifts.</p></details><details><summary>How do I make an AI song a DJ can mix?</summary><p>Tick DJ edit: the Style line asks for an extended instrumental intro and outro, and the checker warns if [Intro] or [Outro] have sung lines. Then confirm the real BPM and key with the <a href="https://hablamusic.github.io/bpm-key-finder/">BPM and key finder</a>, because AI models often ignore the key in the prompt.</p></details><details><summary>Is it free? Does it send my lyrics anywhere?</summary><p>Free and open source (MIT). The Python scripts run inside your browser with Pyodide; your lyrics are never uploaded.</p></details></div></section>
+
+</main>
+<footer><div class="wrap cols">
+<div><strong>Made by <a href="https://hablamusic.com/?utm_source=github&utm_medium=pages&utm_campaign=suno-latin-producer">HablaMusic</a></strong><br>AI music generator and free DJ tools in English, Spanish and Portuguese.<br><a href="https://hablamusic.com/dj-tools?utm_source=github&utm_medium=pages&utm_campaign=suno-latin-producer">Free DJ tools</a></div>
+<div><strong>More open-source DJ tools</strong><ul style="padding-left:18px;margin:6px 0"><li><a href="https://hablamusic.github.io/bpm-key-finder/">BPM and key finder</a> · <a href="https://github.com/hablamusic/bpm-key-finder">GitHub</a></li><li><a href="https://hablamusic.github.io/camelot-wheel/">Camelot wheel</a> · <a href="https://github.com/hablamusic/camelot-wheel">GitHub</a></li><li><a href="https://hablamusic.github.io/awesome-ai-dj-prompts/">AI DJ prompts</a> · <a href="https://github.com/hablamusic/awesome-ai-dj-prompts">GitHub</a></li></ul><a href="https://github.com/hablamusic">github.com/hablamusic</a></div>
+<div><strong>Built by</strong> <a href="https://www.roimobi.com/?utm_source=github&utm_medium=pages&utm_campaign=suno-latin-producer">Vlad Yasinski</a> · <a href="https://www.linkedin.com/in/vlad-yasinski-ua5er/">LinkedIn</a><br>License: MIT · data CC BY 4.0 · <a href="https://github.com/hablamusic/suno-latin-producer">Source on GitHub</a><br><span class="small">Cookieless, anonymous page-view stats; no cookies, nothing stored on your device. Audio you analyse never leaves your browser.</span><br><span class="small">Updated 2026-11-26</span></div>
+</div></footer>
+<script>window.T={"copy": "Copy", "copied": "Copied"};</script>
+<script src="site.js" defer></script>
+<script>window.S={"loading": "Loading the Python engine (first time only, about 5 seconds)…", "failed": "Could not load the engine. Check your connection and try again.", "working": "Working…", "other": "Other genres", "genreDefault": "genre default", "moods": {}, "vocals": {}, "axes": {"vocal": "vocal", "production": "production", "tempo": "tempo"}, "style_h": "Style (paste into Suno's Style box)", "style_sub": "A is the base. B and C each change one thing: generate both and keep the one you like.", "lyrics_h": "Lyrics layout (paste into Suno's Lyrics box, then write under each tag)", "lyrics_sub": "What each section needs:", "tempo": "Tempo", "key": "Key", "cw_link": "keys that mix with it", "lint_h": "Tags and structure", "errors": "errors", "warnings": "warnings", "line": "line", "clean": "clean: no errors, no warnings", "meter_h": "Syllables and rhyme", "meter_sub": "Uppercase letters are full rhymes, lowercase are slant (assonance). Lines in (parentheses) are backing vocals and can be short.", "section": "Section", "syll": "Syllables", "rhyme": "Rhyme", "text": "Line", "empty": "empty (instrumental)", "no_drift": "line lengths are even", "langname": {"es": "Spanish", "pt": "Portuguese", "en": "English", "ru": "Russian"}, "lang": "en", "up": "", "groups": [["Latin", ["reggaeton", "dembow", "latin trap", "latin pop", "cumbia", "bachata", "salsa", "merengue", "corridos tumbados", "moombahton", "guaracha"]], ["Brazilian", ["funk carioca", "brazilian phonk", "piseiro", "sertanejo", "pagode"]], ["Club (for DJ sets)", ["latin house", "tech house", "afro house", "amapiano", "house", "techno", "drum and bass"]]], "defaultGenre": "reggaeton", "defaultMood": "playful", "sampleFile": "luna-de-neon.es.txt", "sampleStyle": "luna-de-neon.style.txt", "cw": "https://hablamusic.github.io/camelot-wheel/"};</script><script src="app.js" defer></script>
+<script src="analytics.js" defer></script>
+</body>
+</html>

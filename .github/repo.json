@@ -1,0 +1,33 @@
+{
+  "name": "suno-latin-producer",
+  "description": "Suno prompts for reggaeton, cumbia, bachata, corridos, funk carioca and DJ edits: style prompt, [Verse]/[Chorus] tags and lyrics with a Spanish/Portuguese syllable and rhyme checker. Prompts para Suno en español. Free in your browser. By HablaMusic.",
+  "homepage": "https://hablamusic.github.io/suno-latin-producer/?utm_source=github&utm_medium=about&utm_campaign=suno-latin-producer",
+  "topics": [
+    "suno",
+    "suno-ai",
+    "suno-prompts",
+    "ai-music",
+    "reggaeton",
+    "latin-music",
+    "dj",
+    "dj-tools",
+    "lyrics",
+    "songwriting",
+    "spanish",
+    "portuguese",
+    "funk-carioca",
+    "cumbia",
+    "prompt-engineering",
+    "claude-skills",
+    "agent-skills",
+    "hablamusic"
+  ],
+  "settings": {
+    "has_issues": true,
+    "has_discussions": true,
+    "has_wiki": false,
+    "has_projects": false,
+    "default_branch": "main"
+  },
+  "social_preview": "assets/social-preview.png"
+}
